@@ -1,8 +1,6 @@
 
 # Minimal - Modern Web Concept Design
 
-![Minimal Design Preview](public/og-image.png)
-
 ## Overview
 
 Minimal is a sleek concept design showcasing modern web aesthetics with clean, purposeful interfaces. This project demonstrates contemporary design trends like subtle animations, parallax effects, glass morphism, and thoughtful spacing to create an elegant, distraction-free user experience.
