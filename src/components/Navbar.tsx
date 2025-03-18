@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <a 
-          href="#" 
+          href="/" 
           className="text-lg font-medium tracking-tight"
           aria-label="Home"
         >
