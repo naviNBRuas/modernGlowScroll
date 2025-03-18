@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
@@ -28,13 +29,13 @@ const Navbar = () => {
       )}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
-        <a 
-          href="/" 
+        <Link 
+          to="/" 
           className="text-lg font-medium tracking-tight"
           aria-label="Home"
         >
           Minimal
-        </a>
+        </Link>
         
         <ul className="hidden md:flex items-center space-x-10">
           {['Features', 'Products', 'About', 'Contact'].map((item) => (

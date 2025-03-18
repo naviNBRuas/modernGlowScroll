@@ -9,14 +9,27 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === 'development' && componentTagger(),
   ].filter(Boolean),
-  base: '/modernGlowScroll/', // Set this to your repository name
+  base: '/modernGlowScroll/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          'react-router': ['react-router-dom'],
+        },
+      },
+    },
+  },
   server: {
     port: 8080,
-    host: '::'
+    host: true,
+    strictPort: true,
   }
 }));
