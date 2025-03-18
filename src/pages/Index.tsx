@@ -36,7 +36,15 @@ export default function Index() {
       <Navbar />
       <main>
         <HeroSection />
-        <ContentSection />
+        <ContentSection 
+          id="features" 
+          title="Our Features" 
+          subtitle="Discover what makes our platform unique"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Content will be added by the FeatureCard component */}
+          </div>
+        </ContentSection>
         <Testimonials />
         <CallToAction />
       </main>
